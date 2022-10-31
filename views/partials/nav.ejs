@@ -1,0 +1,22 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+
+<div class="topnav">
+  <a class="logo" ><img src="https://logopond.com/logos/f23ff6ab5e9c693fca82cec3c52406de.png" alt="Logo" height="36"></i> LovelyPet</a>
+  <a href="search" class="split"><i class="fa fa-fw fa-search"></i> Search</a>
+  <a href="/membership" class="split"
+    ><i class="fa fa-solid fa-paw"></i> Membership</a
+  >
+  <% if(!isAuthenticated) { %>
+  <a href="/login" class="split"><i class="fa fa-fw fa-user"></i>Login</a>
+
+  <% } else { %>
+  <a href="/logout" class="split"><i class="fa fa-fw fa-user"></i>Logout</a>
+
+  <% } %>
+  <a href="/" class="split"><i class="fa fa-fw fa-home"></i>Home</a>
+
+ 
+</div>
